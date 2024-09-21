@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width:250px
+        }
+    </style>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend align="center">Login form</legend>
+        <label for="user-name"> Name </label>
+       <input type="text"id="user-name" ><br><br>
+ 
+       <label for="email">Email</label>
+       <input type="email" id="email"><br><br>
+
+       <label for="pass">Password</label>
+       <input type="password" id="pass"><br><br>
+
+       Year of Passout
+       <select name="student-yop" id="">
+        <option value="" disabled selected>--Select--</option>
+        <option value="2020">2020</option>
+        <option value="2021">2021</option>
+        <option value="2022">2022</option>
+        <option value="2023">2023</option>
+       </select><br><br>
+       <!-- /Datalist Tag : suggestion list-->
+        <input type="text" name="state" placeholder="Enter your state" list="state-list">
+       <datalist id="state-list">
+        <option value="Delhi"></option>
+        <option value="Andhra Pradesh"></option>
+        <option value="Arunachal Pradesh"></option>
+        <option value="Maharastra"></option>
+        <option value="Mumbai"></option>
+
+       </datalist><br><br>
+<label for="User_feedback">
+    User Feedback
+</label><br>
+       <textarea name="feedback" id="User_feedback" cols="20" rows="10" placeholder="Give feedback!"></textarea><br><br>
+       
+       <!-- <input type="submit" value="submit">
+       <input type="reset" value="cancel">
+     -->
+       <button type="submit">
+        Create Your Account
+       </button>
+       <button type="reset">Cancel</button>
+
+       <!-- Diff b/t iput type submit and button tag -->
+
+    </fieldset>
+    </form>
+</body>
+</html>
